@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+    <script>
+      "use strict"
+      document.getElementById('btn').addEventListener('click',()=>{
+        /*Q1
+        let str = "aryaman";
+        let ucFirst = (str)=>str[0].toUpperCase() +str.slice(1);
+        alert(ucFirst(str));
+        */
+        /*Q2
+        let checkSpam = (str)=>{
+            str = str.toLowerCase()
+            if(str.includes('viagra')|| str.includes('xxxx')){
+                alert('Spam')
+            }
+        }
+        let inp =prompt('Enter a string',"Empty")
+        checkSpam(inp)*/
+        //Q3
+        let truncate = (str,maxl)=>{
+            if(str.length>maxl){
+                str = str.substr(0,maxl) + "..."
+                return str;
+            }
+            else   
+                return str;
+
+        }
+        alert(truncate("Hey there",10))
+        }) 
+    
+    </script>
+</body>
+</html>

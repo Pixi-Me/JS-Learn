@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click Me</button>
+    <script>
+        "use strict"
+        document.getElementById('btn').addEventListener('click',()=>
+        {
+            /*"
+            Q1
+            
+            let x = (a,b) => alert(a+b);
+            let n1 = +prompt("Enter number a",'0');
+            let n2 = +prompt("Enter number b",'0');
+            x(n1,n2);
+            */
+            /*Q2 Repeat untill number input
+            
+            let x = 0;
+            while(x==0){
+                let num = prompt('Enter a number');
+                console.log(num);
+                if(+num||num == null|| num == ""){
+                    x++;
+                    console.log(num);
+                }
+                
+                } */
+
+            //Q3
+            let random = (min,max)=>{
+                let x = min + Math.random() * (max-min);
+                
+                return Math.trunc(x);
+            }
+            alert(random(1,6));
+
+
+
+        })
+        
+
+    </script>
+</body>
+</html>
