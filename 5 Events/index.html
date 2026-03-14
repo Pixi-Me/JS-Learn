@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-color: black;
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+        body,html{
+            background-color: #222;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #txt{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10rem;
+            user-select: none;
+
+            
         }
         #inp{
             background-color: azure;
@@ -14,10 +32,48 @@
             padding: 5px;
             border-radius: 10px;
         }
+        #file{
+            display:none
+        }
+        #fileBtn{
+            padding: 10px;
+            font-weight: 900;
+            font-size: 1.4rem;
+            background-color: rgb(251, 6, 6);
+            color: rgba(240, 255, 255, 0.854);
+            border-radius: 10px;
+
+        }
+        #fileBtn:hover{
+            background-color: rgb(177, 4, 4);
+        }
     </style>
 </head>
 <body>
-    <input type="text" name="" placeholder="Enter Something" id="inp">
-    <script src="script.js"></script>
+    <!-- 1 -->
+    <!-- <input type="text" name="" placeholder="Enter Something" id="inp">
+    <select id="sel">
+
+        <option disabled selected value="Default">Select your gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select> -->
+    <!-- 2 -->
+    <!-- <div id="txt">
+        Hello
+    </div> -->
+
+        <!-- 3 -->
+
+    <input type="file" name="" id="file">
+    <button id="fileBtn">Upload Files</button>
+
+
+
+
+
+    
+
+        <script src="script.js"></script>
 </body>
 </html>
